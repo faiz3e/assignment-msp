@@ -4,10 +4,11 @@ import { connect } from 'react-redux'
 import './launchScreen.style.css';
 import { getProducts } from './selectors';
 import { List } from '../../common/compoents/List/List'
+import { ADD_PRODUCT, REMOVE_PRODUCT } from './launchScreenActionTypes';
 
 const LaunchScreenComponent = (props) => {
 
-  const { data } = props;
+  const { data, dispatch } = props;
   return (
     <div className="App">
       <header className="App-header">
@@ -15,13 +16,10 @@ const LaunchScreenComponent = (props) => {
       <List
         data={data}
         onCardClick={(value) => {
-          console.log( value)
-          //dispatch an action which willbe listened be reducer to add to cart
-          // this.props.dispatch({ type: 'GET_PRODUCTS' ,payload:value})
+          console.log(value)
+          dispatch(value.isChecked ? { type: ADD_PRODUCT, payload: value.item } : { type: REMOVE_PRODUCT, payload: value.item })
         }} />
-      <button onClick={() => {
-      }}> asdasd</button>
-
+     
     </div>
   );
 }
