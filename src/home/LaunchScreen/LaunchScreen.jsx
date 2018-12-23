@@ -2,15 +2,16 @@ import React from 'react';
 import { connect } from 'react-redux'
 import './launchScreen.style.css';
 import { getProducts } from './selectors';
-
 const LaunchScreenComponent = (props) => {
-  const { product } = props;
+
+const { product } = props;
   return (
     <div className="App">
       <header className="App-header">
       </header>
       <p>{product.item}</p>
       <button onClick={() => {
+
       }}> asdasd</button>
 
     </div>
