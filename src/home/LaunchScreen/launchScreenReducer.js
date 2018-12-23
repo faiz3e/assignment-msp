@@ -1,7 +1,10 @@
 import { GET_PRODUCTS, FETCH_PRODUCT_INITIATE, FETCH_PRODUCT_SUCCESS, FETCH_PRODUCT_FAILED } from './launchScreenActionTypes';
 
-const initialState = {
-  item: 1
+const initialState = { 
+  products: false,
+  users: null,
+  error: null,
+  success: false
 };
 
 export function productReducer(state = initialState, action) {
@@ -9,15 +12,14 @@ export function productReducer(state = initialState, action) {
     case GET_PRODUCTS:
       return { ...state };
       case FETCH_PRODUCT_INITIATE:
-      console.log("GET_PRODUCTS of reducer")
+      console.log("FETCH_PRODUCT_INITIATE of reducer")
       return { ...state };
       case FETCH_PRODUCT_SUCCESS:
-      console.log("GET_PRODUCTS of reducer")
-      return { ...state };
+      console.log("FETCH_PRODUCT_SUCCESS of reducer")
+      return { ...state, fetching: false, error: false, success: true, products: action.payload };   
       case FETCH_PRODUCT_FAILED:
-      console.log("GET_PRODUCTS of reducer")
+      console.log("FETCH_PRODUCT_FAILED of reducer")
       return { ...state };
-   
       default:
       return state;
   }

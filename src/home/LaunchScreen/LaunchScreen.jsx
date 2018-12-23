@@ -1,17 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux'
+
 import './launchScreen.style.css';
 import { getProducts } from './selectors';
+import { List } from '../../common/compoents/List/List'
+
 const LaunchScreenComponent = (props) => {
 
-const { product } = props;
+  const { data } = props;
   return (
     <div className="App">
       <header className="App-header">
       </header>
-      <p>{product.item}</p>
+      <List data={data} onCardClick={(value)=>{console.log("laucnch screen",value)}}/>
       <button onClick={() => {
-
       }}> asdasd</button>
 
     </div>
@@ -20,7 +22,7 @@ const { product } = props;
 
 const mapStateToprops = (state) => {
   return {
-    product: getProducts(state)
+    data: getProducts(state)
   }
 }
 

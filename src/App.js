@@ -10,7 +10,7 @@ class AppComponent extends Component {
   }
   render() {   
     return (
-     <LaunchScreen/>
+     <LaunchScreen data={this.props.data}/>
     );
   }
 }
