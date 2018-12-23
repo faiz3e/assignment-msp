@@ -12,7 +12,13 @@ const LaunchScreenComponent = (props) => {
     <div className="App">
       <header className="App-header">
       </header>
-      <List data={data} onCardClick={(value)=>{console.log("laucnch screen",value)}}/>
+      <List
+        data={data}
+        onCardClick={(value) => {
+          console.log( value)
+          //dispatch an action which willbe listened be reducer to add to cart
+          // this.props.dispatch({ type: 'GET_PRODUCTS' ,payload:value})
+        }} />
       <button onClick={() => {
       }}> asdasd</button>
 

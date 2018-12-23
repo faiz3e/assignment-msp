@@ -5,7 +5,13 @@ export class CheckBox extends Component {
     const { onCardClick, item } = this.props;
     return (
       <div>
-        <input type="checkbox" value={item.name} onClick={(e) => { onCardClick(e.target.value) }} />
+        <input type="checkbox"
+          value={item.name}
+          onClick={() => {
+            this.setState({
+              isChecked: !this.state.isChecked
+            }, () => { onCardClick({item, ...this.state}) })
+          }} />
       </div>
     );
   }
