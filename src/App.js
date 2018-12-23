@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { connect } from 'react-redux'
 
-class App extends Component {
-  render() {
+import { LaunchScreen } from './home/LaunchScreen/LaunchScreen';
+import { GET_PRODUCTS } from './home/LaunchScreen/launchScreenActionTypes';
+
+class AppComponent extends Component {
+  componentDidMount(){
+    this.props.dispatch({ type: GET_PRODUCTS })
+  }
+  render() {   
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+     <LaunchScreen/>
     );
   }
 }
 
-export default App;
+const mapStateToprops = (state) => {
+  return {
+    product: state
+  }
+}
+
+const mapDispatchToprops = (dispatch) => ({
+  dispatch
+})
+
+export const App = connect(mapStateToprops, mapDispatchToprops)(AppComponent)

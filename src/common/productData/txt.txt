@@ -1,0 +1,55 @@
+// export const a: [{ { name: "Item01", price: 10, "weight": 200 },
+//      { name: "Item02", price: 100, "weight": 20 }
+//     , { name: "Item03", price: 30, "weight": 300 }
+//     , { name: "Item04", price: 20, "weight": 500 }
+//     , { name: "Item05", price: 30, "weight": 250 }
+//     , { name: "Item06", price: 40, "weight": 10 }
+//     , { name: "Item07", price: 200, "weight": 10 }
+//     , { name: "Item08", price: 120, "weight": 500 }
+//     , { name: "Item09", price: 130, "weight": 790 }
+//     , { name: "Item10", price: 20, "weight": 100 }
+//     , { name: "Item11", price: 10, "weight": 340 }
+//     , { name: "Item12", price: 4, "weight": 800 }
+//     , { name: "Item13", price: 5, "weight": 200 }
+//     , { name: "Item14", price: 240, "weight": 20 }
+//     , { name: "Item15", price: 123, "weight": 700 }
+//     , { name: "Item16", price: 245, "weight": 10 }
+//     , { name: "Item17", price: 230, "weight": 20 }
+//     , { name: "Item18", price: 110, "weight": 200 }
+//     , { name: "Item19", price: 45, "weight": 200 }
+//     , { name: "Item20", price: 67, "weight": 20 }
+//     , { name: "Item21", price: 88, "weight": 300 }
+//     , { name: "Item22", price: 10, "weight": 500 }
+//     , { name: "Item23", price: 17, "weight": 250 }
+//     , { name: "Item24", price: 19, "weight": 10 }
+//     , { name: "Item25", price: 89, "weight": 10 }
+//     , { name: "Item26", price: 45, "weight": 500 }
+//     , { name: "Item27", price: 99, "weight": 790 }
+//     , { name: "Item28", price: 125, "weight": 100 }
+//     , { name: "Item29", price: 198, "weight": 340 }
+//     , { name: "Item30", price: 220, "weight": 800 }
+//     , { name: "Item31", price: 249, "weight": 200 }
+//     , { name: "Item32", price: 230, "weight": 20 }
+//     , { name: "Item33", price: 190, "weight": 700 }
+//     , { name: "Item34", price: 45, "weight": 10 }
+//     , { name: "Item35", price: 12, "weight": 20 }
+//     , { name: "Item36", price: 5, "weight": 200 }
+//     , { name: "Item37", price: 2, "weight": 200 }
+//     , { name: "Item38", price: 90, "weight": 20 }
+//     , { name: "Item39", price: 12, "weight": 300 }
+//     , { name: "Item40", price: 167, "weight": 500 }
+//     , { name: "Item41", price: 12, "weight": 250 }
+//     , { name: "Item42", price: 8, "weight": 10 }
+//     , { name: "Item43", price: 2, "weight": 10 }
+//     , { name: "Item44", price: 9, "weight": 500 }
+//     , { name: "Item45", price: 210, "weight": 790 }
+//     , { name: "Item46", price: 167, "weight": 100 }
+//     , { name: "Item47", price: 23, "weight": 340 }
+//     , { name: "Item48", price: 190, "weight": 800 }
+//     , { name: "Item49", price: 199, "weight": 200 }
+//     , { name: "Item50", price: 12, "weight": 20 }
+// }
+    
+// ]
+
+export const a22[{z:1},{v:1},{f:1}];
