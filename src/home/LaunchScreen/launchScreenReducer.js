@@ -1,4 +1,4 @@
-import { GET_PRODUCTS, FETCH_PRODUCT_INITIATE, FETCH_PRODUCT_SUCCESS, FETCH_PRODUCT_FAILED, ADD_PRODUCT, REMOVE_PRODUCT } from './launchScreenActionTypes';
+import { GET_PRODUCTS, FETCH_PRODUCT_INITIATE, FETCH_PRODUCT_SUCCESS, FETCH_PRODUCT_FAILED } from './launchScreenActionTypes';
 
 const initialState = {
   products: false,
@@ -20,13 +20,6 @@ export function productReducer(state = initialState, action) {
     case FETCH_PRODUCT_FAILED:
       console.log("FETCH_PRODUCT_FAILED of reducer")
       return { ...state, fetching: false, error: true, success: false };
-    case ADD_PRODUCT://! todo make a reducer for add and sb
-      console.log("ADD_PRODUCT of reducer")
-      return { ...state };
-    case REMOVE_PRODUCT:
-      console.log("REMOVE_PRODUCT of reducer")
-      return { ...state };
-
     default:
       return state;
   }

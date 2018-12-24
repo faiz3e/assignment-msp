@@ -2,88 +2,88 @@
   "data": [
     {
       "name": "item1",
-      "price": "10",
-      "weight": "200"
+      "price": 5,
+      "weight": 200
     },
     {
       "name": "item2",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item3",
-      "price": "10",
-      "weight": "200"
+      "price": 15,
+      "weight": 200
     },
     {
       "name": "item4",
-      "price": "10",
-      "weight": "200"
+      "price": 11,
+      "weight": 200
     },
     {
       "name": "item5",
-      "price": "10",
-      "weight": "200"
+      "price": 16,
+      "weight": 200
     },
     {
       "name": "item6",
-      "price": "10",
-      "weight": "200"
+      "price": 17,
+      "weight": 200
     },
     {
       "name": "item7",
-      "price": "10",
-      "weight": "200"
+      "price": 110,
+      "weight": 200
     },
     {
       "name": "item8",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item9",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item10",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item11",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item12",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item13",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item14",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item15",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item16",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     },
     {
       "name": "item17",
-      "price": "10",
-      "weight": "200"
+      "price": 10,
+      "weight": 200
     }
   ]
 }

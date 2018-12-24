@@ -4,8 +4,7 @@ import { connect } from 'react-redux'
 import './launchScreen.style.css';
 import { getProducts } from './selectors';
 import { List } from '../../common/compoents/List/List'
-import { ADD_PRODUCT, REMOVE_PRODUCT } from './launchScreenActionTypes';
-
+import { ADD_PRODUCT, REMOVE_PRODUCT } from '../Cart/cartActionTypes'
 const LaunchScreenComponent = (props) => {
 
   const { data, dispatch } = props;
@@ -19,7 +18,6 @@ const LaunchScreenComponent = (props) => {
           console.log(value)
           dispatch(value.isChecked ? { type: ADD_PRODUCT, payload: value.item } : { type: REMOVE_PRODUCT, payload: value.item })
         }} />
-     
     </div>
   );
 }
