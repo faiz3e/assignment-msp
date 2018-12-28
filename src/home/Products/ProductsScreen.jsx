@@ -5,17 +5,19 @@ import './style.css';
 import { getProductSelector } from './selectors';
 import { List } from '../../common/compoents/List/List'
 import { ADD_PRODUCT, REMOVE_PRODUCT } from '../Cart/cartActionTypes'
-const LaunchScreenComponent = (props) => {
 
+const ProductsScreenComponent = (props) => {
   const { data, dispatch } = props;
   return (
     <div className="leftPanel">
       <header className="App-header"></header>
       <List
         data={data}
+        showCheckBox={true}
         onCardClick={(value) => {
           dispatch(value.isChecked ? { type: ADD_PRODUCT, payload: value.item } : { type: REMOVE_PRODUCT, payload: value.item })
-        }} />
+        }}
+      />
     </div>
   );
 }
@@ -30,4 +32,4 @@ const mapDispatchToprops = (dispatch) => ({
   dispatch
 })
 
-export const LaunchScreen = connect(mapStateToprops, mapDispatchToprops)(LaunchScreenComponent)
+export const ProductsScreen = connect(mapStateToprops, mapDispatchToprops)(ProductsScreenComponent)

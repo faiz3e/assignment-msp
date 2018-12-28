@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
-import { LaunchScreen } from './home/LaunchScreen/LaunchScreen';
-import { GET_PRODUCTS } from './home/LaunchScreen/actionTypes';
+import { GET_PRODUCTS } from './home/Products/actionTypes';
 import { CartScreen } from './home/Cart/CartScreen';
-import { getCartSelector } from './home/Cart/selectors';
+import { selectCartItems } from './home/Cart/selectors';
+import { ProductsScreen } from './home/Products/ProductsScreen';
 
 
 class AppComponent extends Component {
@@ -13,9 +13,9 @@ class AppComponent extends Component {
   }
   render() {
     return (
-      <div style={{display:'flex'}}>
-        <LaunchScreen data={this.props.data} />
-        <CartScreen  />
+      <div style={{ display: 'flex' }}>
+        <ProductsScreen data={this.props.data} />
+        <CartScreen />
       </div>
     );
   }
@@ -24,9 +24,7 @@ class AppComponent extends Component {
 const mapStateToprops = (state) => {
   return {
     product: state,
-    cartData: getCartSelector(state)
-
-    
+    cartData: selectCartItems(state)
   }
 }
 
