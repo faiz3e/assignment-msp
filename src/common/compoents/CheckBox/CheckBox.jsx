@@ -4,7 +4,7 @@ export class CheckBox extends Component {
   render() {
     const { onCardClick, item } = this.props;
     return (
-      <div>
+      <div style={{justifyContent:"center",alignContent:"center",display:"flex",alignItems:"center"}}>
         <input type="checkbox"
           value={item.name}
           onClick={() => {

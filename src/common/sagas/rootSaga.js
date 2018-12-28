@@ -1,4 +1,4 @@
-import {fetchProductWatcherSaga} from '../../home/LaunchScreen/launchscreenSaga'
+import {fetchProductWatcherSaga} from '../../home/LaunchScreen/saga'
 
 export const rootSaga = [
     fetchProductWatcherSaga

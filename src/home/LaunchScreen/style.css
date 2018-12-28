@@ -1,0 +1,10 @@
+.App {
+    text-align: center;
+  }
+  
+  .leftPanel{
+    margin-top: 30px;
+    width: 50%;
+    justify-content: center;
+    display: flex
+  }

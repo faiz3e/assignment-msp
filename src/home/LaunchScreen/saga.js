@@ -1,6 +1,6 @@
 import { takeLatest, call, put } from "redux-saga/effects";
 
-import { FETCH_PRODUCT_INITIATE, FETCH_PRODUCT_SUCCESS, FETCH_PRODUCT_FAILED, GET_PRODUCTS } from './launchScreenActionTypes'
+import { FETCH_PRODUCT_INITIATE, FETCH_PRODUCT_SUCCESS, FETCH_PRODUCT_FAILED, GET_PRODUCTS } from './actionTypes'
 // import { URL } from "../../common/constants";
 import { data } from '../../common/productData/productData.json'
 

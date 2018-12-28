@@ -1,0 +1,14 @@
+.App {
+    text-align: center;
+  }
+  
+  .rightPanel{   
+    margin-top: 30px;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .flexCol{
+    display: flex;
+    flex-direction: 'column'  
+  }

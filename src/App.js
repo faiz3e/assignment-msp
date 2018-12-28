@@ -2,22 +2,31 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 import { LaunchScreen } from './home/LaunchScreen/LaunchScreen';
-import { GET_PRODUCTS } from './home/LaunchScreen/launchScreenActionTypes';
+import { GET_PRODUCTS } from './home/LaunchScreen/actionTypes';
+import { CartScreen } from './home/Cart/CartScreen';
+import { getCartSelector } from './home/Cart/selectors';
+
 
 class AppComponent extends Component {
-  componentDidMount(){
+  componentDidMount() {
     this.props.dispatch({ type: GET_PRODUCTS })
   }
-  render() {   
+  render() {
     return (
-     <LaunchScreen data={this.props.data}/>
+      <div style={{display:'flex'}}>
+        <LaunchScreen data={this.props.data} />
+        <CartScreen  />
+      </div>
     );
   }
 }
 
 const mapStateToprops = (state) => {
   return {
-    product: state
+    product: state,
+    cartData: getCartSelector(state)
+
+    
   }
 }
 

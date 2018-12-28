@@ -3,6 +3,8 @@ import { CheckBox } from '../CheckBox/CheckBox'
 import "./list.style.css";
 export class List extends Component {
   render() {
+    console.log("values in list ",this.props);
+    
     const { data } = this.props;
     return (
       <div style={{ cursor: 'pointer' }}>
