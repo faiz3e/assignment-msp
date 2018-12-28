@@ -5,6 +5,7 @@ import { GET_PRODUCTS } from './home/Products/actionTypes';
 import { CartScreen } from './home/Cart/CartScreen';
 import { selectCartItems } from './home/Cart/selectors';
 import { ProductsScreen } from './home/Products/ProductsScreen';
+import { PackageScreen } from './home/Package/PackageScreen';
 
 
 class AppComponent extends Component {
@@ -16,6 +17,7 @@ class AppComponent extends Component {
       <div style={{ display: 'flex' }}>
         <ProductsScreen data={this.props.data} />
         <CartScreen />
+        <PackageScreen/>
       </div>
     );
   }
