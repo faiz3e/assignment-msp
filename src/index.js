@@ -14,6 +14,9 @@ const store = createStore(rootReducer,(applyMiddleware(sagaMiddleware)))
 
 sagaMiddleware.run(...rootSaga);
 
+store.subscribe(() => { 
+  console.log("updated store",store.getState())
+})
 
 ReactDOM.render(
   <Provider store={store}>

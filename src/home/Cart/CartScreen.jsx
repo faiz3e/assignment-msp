@@ -14,7 +14,7 @@ const CartScreenComponent = (props) => {
       <List data={cartItems} />
       <h3>Total price: {cartTotalPayableAmount}</h3>
       <button type="button" onClick={() => {
-        dispatch({ type: PACK_PRODUCTS})
+        dispatch({ type: PACK_PRODUCTS ,payload:cartItems})
 
       }}>proceed to Package</button>
     </div>
