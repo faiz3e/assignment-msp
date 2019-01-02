@@ -2,40 +2,42 @@ import { ADD_PRODUCT, REMOVE_PRODUCT } from "./cartActionTypes";
 
 const initialState = {
   totalItems: 0,
-  cartItems: [{
-    "name": "item1",
-    "price": 10,
-    "weight": 200
-  },
-  {
-    "name": "item2",
-    "price": 100,
-    "weight": 20
-  },
-  {
-    "name": "item3",
-    "price": 30,
-    "weight": 300
-  },
-  {
-    "name": "item4",
-    "price": 40,
-    "weight": 500
-  },
-  {
-    "name": "item5",
-    "price": 200,
-    "weight": 250
-  }, {
-    "name": "item1",
-    "price": 10,
-    "weight": 200
-  },
-  {
-    "name": "item2",
-    "price": 100,
-    "weight": 20
-  }],
+  cartItems: [
+    // {
+    //   "name": "item1",
+    //   "price": 10,
+    //   "weight": 200
+    // },
+    // {
+    //   "name": "item2",
+    //   "price": 100,
+    //   "weight": 20
+    // },
+    // {
+    //   "name": "item3",
+    //   "price": 30,
+    //   "weight": 300
+    // },
+    // {
+    //   "name": "item4",
+    //   "price": 40,
+    //   "weight": 500
+    // },
+    // {
+    //   "name": "item5",
+    //   "price": 200,
+    //   "weight": 250
+    // }, {
+    //   "name": "item1",
+    //   "price": 10,
+    //   "weight": 200
+    // },
+    // {
+    //   "name": "item6",
+    //   "price": 100,
+    //   "weight": 20
+    // }
+  ],
   totalPayableAmount: 0,
   totalWeight: 0
 };

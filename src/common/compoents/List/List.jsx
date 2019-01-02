@@ -9,6 +9,7 @@ export class List extends Component {
     return (
       <div style={{ cursor: 'pointer' }}>
         {data.length > 0 ? data.map((item, itemkey) => {
+          
           return (
             <div key={itemkey} className={'flex'} >
               <p> {item.name} -- </p>

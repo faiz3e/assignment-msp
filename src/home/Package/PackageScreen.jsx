@@ -2,21 +2,32 @@ import React from 'react';
 import { connect } from 'react-redux'
 
 import './style.css';
+import { selectPackageItems } from './selectors';
+import { List } from '../../common/compoents/List/List';
 
 const PackageComponent = (props) => {
 
-  // const { cartItems, cartTotalPayableAmount } = props;
+  const { packageItems } = props;
   return (
     <div className="rightPanel">
-      <h3>Package</h3>
+      <h2>Packages</h2>
+  
+      {packageItems && packageItems.map((item,index) => {
+        return (
+          <div key={index}>
+          <h4>Package{index+1}</h4>
+            <List data={item} />
+          </div>
+          )
+      })
+      }
     </div>
   );
 }
 
 const mapStateToprops = (state) => {
   return {
-    // cartItems: selectCartItems(state),
-    // cartTotalPayableAmount: selectCartTotalPayableAmount(state)
+    packageItems: selectPackageItems(state)
   }
 }
 

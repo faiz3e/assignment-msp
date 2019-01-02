@@ -1,7 +1,3 @@
-// export const selectCartItems = (state) => {
-//   return state.cartReducer && state.cartReducer.cartItems
-// }
-
-// export const selectCartTotalPayableAmount=(state)=>{
-//   return state.cartReducer.totalPayableAmount
-// }
+export const selectPackageItems = (state) => {
+  return state.packageReducer && state.packageReducer.newPackageByprice && state.packageReducer.newPackageByprice
+}
