@@ -9,8 +9,8 @@ import { ADD_PRODUCT, REMOVE_PRODUCT } from '../Cart/cartActionTypes'
 const ProductsScreenComponent = (props) => {
   const { data, dispatch } = props;
   return (
-    <div className="middlePanel">
-      <header className="App-header"></header>
+    <div className="leftPanel">
+      <h2 className='textCenter'>All products</h2>
       <List
         data={data}
         showCheckBox={true}

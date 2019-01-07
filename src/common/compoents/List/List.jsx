@@ -9,7 +9,6 @@ export class List extends Component {
     return (
       <div style={{ cursor: 'pointer' }}>
         {data.length > 0 ? data.map((item, itemkey) => {
-          
           return (
             <div key={itemkey} className={'flex'} >
               <p> {item.name} -- </p>
@@ -19,7 +18,7 @@ export class List extends Component {
                 <CheckBox item={item} {...this.props}></CheckBox>
               }
             </div>)
-        }) : <p>List is empty</p>}
+        }) : <p className='textCenter'>List is empty</p>}
       </div>
     );
   }
