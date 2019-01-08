@@ -7,7 +7,7 @@ const initialState = {
   packageItems: 0,
   totalPrice: 0,
   totalWeight: 0,
-  packageForDelivery:[]
+  packageForDelivery: []
 };
 
 export function packageReducer(state = initialState, action) {
@@ -21,13 +21,13 @@ export function packageReducer(state = initialState, action) {
       const itemsCount = action.payload.itemsCount;
       let minPackageRequired = Math.round(cartTotalPayableAmount / DEFAULT_PACKAGE_PRICE_LIMIT);
       const averageWeightPackage = totalWeight / minPackageRequired;
-      const sortedCart = sortArr(cartItems,'weight')
-      for (i = 0; i < minPackageRequired; i++) {
+      const sortedCart = sortArr(cartItems, 'weight')
+      for (i = 0; i <= minPackageRequired; i++) {
         newPackage[i] = { packageNumber: i, packageWeight: 0, packagePrice: 0, items: [] }
       }
       i = 0;
       sortedCart.map((element) => {
-        for (let j = 0; j < minPackageRequired; j++) {
+        for (let j = 0; j <= minPackageRequired; j++) {
           if (element.weight > averageWeightPackage) {
             newPackage[j].items.push(element)
             newPackage[j].packagePrice += element.price;
@@ -48,13 +48,13 @@ export function packageReducer(state = initialState, action) {
             minPackageRequired += 1;
             break
           }
-        }return element;
+        } return element;
       })
       console.log("newPackage", newPackage)
       state.totalPrice = cartTotalPayableAmount;
       state.totalWeight = totalWeight;
-      state.packageItems=itemsCount
-      state.packageForDelivery= newPackage;
+      state.packageItems = itemsCount
+      state.packageForDelivery = newPackage;
       return {
         ...state
       }
