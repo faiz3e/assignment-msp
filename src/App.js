@@ -14,7 +14,7 @@ class AppComponent extends Component {
   }
   render() {
     return (
-      <div style={{ display: 'flex' }}>
+      <div className={'flex'}>
         <ProductsScreen data={this.props.data} />
         <CartScreen />
         <PackageScreen/>
